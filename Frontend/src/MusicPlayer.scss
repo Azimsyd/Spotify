@@ -1,0 +1,66 @@
+@import 'bootstrap/scss/bootstrap';
+
+.custom-placeholder::placeholder {
+  color: #FFFFFF;
+  opacity: 0.6;
+//   font-family: 'Basier Circle';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+
+.responsive-album-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.responsive-album-img {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  max-height: 60vh;
+}
+
+@media (max-width: 576px) {
+  .responsive-album-img {
+    max-width: 100%;
+  }
+}
+
+.song-container {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  scrollbar-width: thin; // Firefox
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent; // Firefox
+}
+
+
+
+  
